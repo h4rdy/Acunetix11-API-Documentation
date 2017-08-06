@@ -10,7 +10,7 @@ Administrator--Profile--API Key
 ### Header设置:
 
 ```
-X-Auth: API-KEY"
+X-Auth: API-KEY
 Content-type: application/json; charset=utf8
 ```
 
