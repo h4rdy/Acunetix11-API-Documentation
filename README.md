@@ -20,12 +20,12 @@ Content-type: application/json; charset=utf8
 
 ## 文档目录(Contents)
 
-* 1. [Dashboard接口](Document)
-* 2. [Targets接口]()
-    * a. [扫描设置接口]()
-        * 1). [General设置]()
-        * 2). [Crawl设置]()
-        * 3). [HTTP设置]()
-        * 4). [Advanced设置]()
+* 1. [Dashboard接口](https://github.com/h4rdy/Acunetix11-API-Documentation/blob/master/Document/Dashboard.md)
+* 2. [Targets接口](https://github.com/h4rdy/Acunetix11-API-Documentation/blob/master/Document/Targets/main.md)
+    * a. [扫描设置接口](https://github.com/h4rdy/Acunetix11-API-Documentation/blob/master/Document/Targets/main.md)
+        * 1). [General设置](https://github.com/h4rdy/Acunetix11-API-Documentation/blob/master/Document/Targets/scan.md)
+        * 2). [Crawl设置](https://github.com/h4rdy/Acunetix11-API-Documentation/blob/master/Document/Targets/scan.md)
+        * 3). [HTTP设置](https://github.com/h4rdy/Acunetix11-API-Documentation/blob/master/Document/Targets/scan.md)
+        * 4). [Advanced设置](https://github.com/h4rdy/Acunetix11-API-Documentation/blob/master/Document/Targets/scan.md)
      
 
