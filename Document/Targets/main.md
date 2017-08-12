@@ -87,3 +87,11 @@ Data:
 | description |备注 |
 | target_id | 目标id |
 
+
+### 删除目标接口:
+
+```
+Method:DELETE
+URL: /api/v1/targets/{target_id}
+```
+
