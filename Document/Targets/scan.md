@@ -102,7 +102,8 @@ OR:
 
 
 ***上传登录序列***
-
+两步操作
+①
 ```
 Method: POST/DELETE
 URL: /api/v1/targets/{target_id}/configuration/login_sequence
@@ -116,7 +117,7 @@ Data:
 
 | 参数 | 类型 |说明 |
 | --- | --- |--- |
-| name | string | 登录序列文件位置 |
+| name | string | 登录序列文件名 |
 | size | int | 文件大小:计算单位为Byte |
 
 返回参数说明:
@@ -132,6 +133,7 @@ Data:
 
 注: 删除操作不带任何参数直接以DELETE方法请求接口
 
+②
 ```
 Method: POST 
 URL: {upload_url}
