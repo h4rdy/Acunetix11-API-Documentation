@@ -141,7 +141,7 @@ Content-Type: application/octet-stream
 发送参数说明:
 
 | 说明 |
-| --- | --- |--- |
+| --- |
 | 直接将登录序列文件内容POST到接口 |
 
 
