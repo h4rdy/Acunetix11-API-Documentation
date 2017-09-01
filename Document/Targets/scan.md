@@ -316,7 +316,7 @@ Data:
 {"issue_tracker_id":"",
 "technologies":["ASP","ASP.NET"],
 "custom_headers":["h4rdy:xxx"],
-"custom_cookies":[{"url":"http://baidu.com","cookie":"mycookie=test"}],
+"custom_cookies":[{"url":"http://baidu.com","cookie":"mycookie1=test1"},{"url":"http://baidu.com","cookie":"mycookie2=test2"}],
 "debug":false,
 "excluded_hours_id":""}
 ```
