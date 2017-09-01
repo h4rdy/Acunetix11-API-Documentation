@@ -111,7 +111,7 @@ URL: /api/v1/targets/{target_id}/configuration/login_sequence
 Data:
 
 ```
-{name: "wiki.h4rdy.me.lsr", size: 2068}
+{"name": "wiki.h4rdy.me.lsr", "size": 2068}
 ```
 发送参数说明:
 
