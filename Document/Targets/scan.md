@@ -102,8 +102,10 @@ OR:
 
 
 ***上传登录序列***
-三步操作
-①
+
+需三步操作
+
+①获取上传地址:
 
 ```
 Method: POST/DELETE
@@ -134,7 +136,8 @@ Data:
 
 注: 删除操作不带任何参数直接以DELETE方法请求接口
 
-②
+②上传登录凭证:
+
 此接口Header不需要X-Auth,但需要增加Content-Type、Content-Disposition、Content-Range、Cookie。
 
 ```
@@ -175,8 +178,7 @@ Cookie: ui_session=xxxxxxxx
 ```
 
 
-③
-保存:
+③保存:
 
 ```
 Method: patch 
