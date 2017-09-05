@@ -102,8 +102,9 @@ OR:
 
 
 ***上传登录序列***
-两步操作
+三步操作
 ①
+
 ```
 Method: POST/DELETE
 URL: /api/v1/targets/{target_id}/configuration/login_sequence
@@ -111,7 +112,7 @@ URL: /api/v1/targets/{target_id}/configuration/login_sequence
 Data:
 
 ```
-{"name": "wiki.h4rdy.me.lsr", "size": 2068}
+{"name": "h4rdy.lsr", "size": 2068}
 ```
 发送参数说明:
 
@@ -134,10 +135,15 @@ Data:
 注: 删除操作不带任何参数直接以DELETE方法请求接口
 
 ②
+此接口Header不需要X-Auth,但需要增加Content-Type、Content-Disposition、Content-Range、Cookie。
+
 ```
 Method: POST 
 URL: {upload_url}
 Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="h4rdy.lsr"
+Content-Range: bytes 0-2067/2068,
+Cookie: ui_session=xxxxxx
 ```
 
 发送参数说明:
@@ -145,6 +151,42 @@ Content-Type: application/octet-stream
 | 说明 |
 | --- |
 | 直接将登录序列文件内容POST到接口 |
+
+Demo:
+
+```
+POST /uploads/ef116370-2ede-4a6e-8c94-cb9046dbbd17 HTTP/1.1
+Host: 192.168.1.200:3443
+Content-Range: bytes 0-2067/2068
+Content-Disposition: attachment; filename="h4rdy.lsr"
+Content-Type: application/octet-stream
+Cookie: ui_session=xxxxxxxx
+
+{
+    "actions": [
+        {
+            "parameters": {
+            },
+            "target": "https://www.baidu.com:80/",
+            "timeout": 20000,
+            "type": "navigate"
+        },
+        {......
+```
+
+
+③
+保存:
+
+```
+Method: patch 
+URL: /api/v1/targets/{target_id}/configuration
+```
+Data:
+
+```
+{"login":{"kind":"sequence"}}
+```
 
 
 #### AcuSensor:
