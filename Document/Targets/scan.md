@@ -177,6 +177,7 @@ Content-Type: application/octet-stream
         {......
 ```
 
+注意: 其中有个坑需要注意下,如果使用的python,并且lsr文件中包含了中文,那么在post的时候可能会存在编码相关的问题。可以通过返回的code判断是否上传成功,当code为204的时候，表明上传成功。
 
 ③保存:
 
