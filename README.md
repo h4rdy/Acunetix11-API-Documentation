@@ -1,7 +1,7 @@
 # Acunetix11-API-Documentation
 
 * Acunetix11伪API,非官方API文档。官方API需要 Enterprise edition licenses才能获取到。
-* 先更一部分，有时间慢慢更。
+* 先更一部分，有时间慢慢更。有问题提issue或者pr。
 
 ## 获取API-KEY
 Administrator--Profile--API Key
