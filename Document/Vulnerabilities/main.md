@@ -38,6 +38,8 @@ URL: /api/v1/vulnerabilities?q=severity:{int};criticality:{int};status:{string};
 
 ### 获取单个漏洞信息
 
+说明: 此处的vuln_id 应是根据本模块中获取全部漏洞信息中得到的vuln_id, 不能将scans模块得到的vuln_id传入,否则无法获取到漏洞信息.
+
 ```
 Method:GET 
 URL: api/v1/vulnerabilities/{vuln_id}
