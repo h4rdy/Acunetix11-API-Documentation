@@ -130,13 +130,16 @@ URL: /api/v1/scans/{scan_id}/results/{scan_session_id}/vulnerabilities
 ```
 
 ### 获取当前扫描单个漏洞信息
+
 ```
 Method: GET
 URL: /api/v1/scans/{scan_id}/results/{scan_session_id}/vulnerabilities{vuln_id}
 ```
+
 返回参数说明:
 
 |参数|说明|
+| --- | --- |
 | affects_detail | 影响细节 |
 | affects_url | 受影响链接 |
 | criticality | 危险程度 |
