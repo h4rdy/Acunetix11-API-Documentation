@@ -129,6 +129,34 @@ URL: /api/v1/scans/{scan_id}/results/{scan_session_id}/vulnerabilities
 
 ```
 
+### 获取当前扫描单个漏洞信息
+```
+Method: GET
+URL: /api/v1/scans/{scan_id}/results/{scan_session_id}/vulnerabilities{vuln_id}
+```
+返回参数说明:
 
-
+|参数|说明|
+| affects_detail | 影响细节 |
+| affects_url | 受影响链接 |
+| criticality | 危险程度 |
+| cvss2 | cvss2信息 |
+| cvss3 | cvss3信息 |
+| cvss_score | cvss 评分 |
+| description | 漏洞描述 |
+| details | 漏洞细节 |
+| impact | 影响 |
+| loc_id | loc id |
+| long_description | 更多描述 |
+| recommendation | 整改意见 |
+| references | 来源 |
+| request | 请求头信息 |
+| severity | 漏洞等级(0-3) |
+| source | 来源 |
+| status | 漏洞状态 |
+| tags | 标签 |
+| target_id | 目标ID |
+| vt_id | vt_id |
+| vt_name | 漏洞名字 |
+| vuln_id | 该次扫描中的漏洞ID |
 
