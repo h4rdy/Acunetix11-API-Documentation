@@ -133,7 +133,7 @@ URL: /api/v1/scans/{scan_id}/results/{scan_session_id}/vulnerabilities
 
 ```
 Method: GET
-URL: /api/v1/scans/{scan_id}/results/{scan_session_id}/vulnerabilities{vuln_id}
+URL: /api/v1/scans/{scan_id}/results/{scan_session_id}/vulnerabilities/{vuln_id}
 ```
 
 返回参数说明:
